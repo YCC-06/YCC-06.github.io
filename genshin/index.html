@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神图鉴 · 角色</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ 原神图鉴 ✨</h1>
+            <p class="subtitle">角色 · 圣遗物 · 提瓦特大陆全收录</p>
+            <div class="nav-tabs">
+                <a href="../index.html" class="nav-tab">🏠 个人主页</a>
+                <a href="index.html" class="nav-tab active">🎭 角色</a>
+                <a href="artifacts.html" class="nav-tab">💠 圣遗物</a>
+            </div>
+        </header>
+
+        <!-- 筛选区域 -->
+        <section class="filter-section">
+            <div class="filter-group">
+                <span class="filter-label">🔮 元素筛选</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn reset-btn active" data-filter="all" data-type="element">全部</button>
+                    <button class="filter-btn" data-filter="anemo" data-type="element">🌪️ 风</button>
+                    <button class="filter-btn" data-filter="geo" data-type="element">🪨 岩</button>
+                    <button class="filter-btn" data-filter="electro" data-type="element">⚡ 雷</button>
+                    <button class="filter-btn" data-filter="dendro" data-type="element">🌿 草</button>
+                    <button class="filter-btn" data-filter="hydro" data-type="element">💧 水</button>
+                    <button class="filter-btn" data-filter="pyro" data-type="element">🔥 火</button>
+                    <button class="filter-btn" data-filter="cryo" data-type="element">❄️ 冰</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">⚔️ 武器筛选</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn reset-btn active" data-filter="all" data-type="weapon">全部</button>
+                    <button class="filter-btn" data-filter="单手剑" data-type="weapon">🗡️ 单手剑</button>
+                    <button class="filter-btn" data-filter="双手剑" data-type="weapon">⚔️ 双手剑</button>
+                    <button class="filter-btn" data-filter="长柄武器" data-type="weapon">🔱 长柄武器</button>
+                    <button class="filter-btn" data-filter="弓" data-type="weapon">🏹 弓</button>
+                    <button class="filter-btn" data-filter="法器" data-type="weapon">📖 法器</button>
+                </div>
+            </div>
+            <div class="filter-actions">
+                <button class="toggle-all-btn" id="toggleAllBtn"><span>📂</span> 全部收起</button>
+            </div>
+        </section>
+
+        <div class="no-results">😢 没有符合条件的角色</div>
+
+        <!-- 蒙德 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">🌪️</span>
+                <span>蒙德 · 风与自由的国度</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="anemo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/琴.png" alt="琴">
+                    <div class="character-info">
+                        <div class="character-name">琴</div>
+                        <div class="character-title">「蒲公英骑士」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">西风骑士团代理团长，芭芭拉的姐姐。性格认真严谨，时刻守护着蒙德城的和平与安全。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="双手剑">
+                    <img class="character-image" src="../images/迪卢克.png" alt="迪卢克">
+                    <div class="character-info">
+                        <div class="character-name">迪卢克</div>
+                        <div class="character-title">「晨曦的暗面」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">晨曦酒庄庄主，表面优雅从容，夜晚则化身为守护蒙德的暗夜英雄，以火焰之剑净化一切邪恶。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="弓">
+                    <img class="character-image" src="../images/温迪.png" alt="温迪">
+                    <div class="character-info">
+                        <div class="character-name">温迪</div>
+                        <div class="character-title">「风色诗人」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">来路不明的吟游诗人，真实身份是蒙德的风神「巴巴托斯」，提瓦特七神之一。热爱自由与美酒。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="法器">
+                    <img class="character-image" src="../images/可莉.png" alt="可莉">
+                    <div class="character-info">
+                        <div class="character-name">可莉</div>
+                        <div class="character-title">「逃跑的太阳」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">西风骑士团火花骑士，活泼好动的小女孩。热衷于各种爆炸实验，经常因为破坏行为被关禁闭。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="法器">
+                    <img class="character-image" src="../images/莫娜.png" alt="莫娜">
+                    <div class="character-info">
+                        <div class="character-name">莫娜</div>
+                        <div class="character-title">「星天水镜」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">伟大的占星术士，博闻强识但生活拮据。虽然才华横溢，却总是因为把钱花在研究上而吃不起饭。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="双手剑">
+                    <img class="character-image" src="../images/优菈.png" alt="优菈">
+                    <div class="character-info">
+                        <div class="character-name">优菈</div>
+                        <div class="character-title">「浪沫的旋舞」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">西风骑士团游击小队队长，劳伦斯家族的后裔。虽然出身于旧贵族，却选择了守护蒙德的道路。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="geo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/阿贝多.png" alt="阿贝多">
+                    <div class="character-info">
+                        <div class="character-name">阿贝多</div>
+                        <div class="character-title">「白垩之子」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">西风骑士团首席炼金术士，天才学者。对世间万物充满好奇，致力于探索世界的真理。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="双手剑">
+                    <img class="character-image" src="../images/法尔伽.png" alt="法尔伽">
+                    <div class="character-info">
+                        <div class="character-name">法尔伽</div>
+                        <div class="character-title">「北风骑士」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">西风骑士团大团长，传说中的北风骑士。率领骑士团远征多年，是蒙德最强大的战士之一。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/洛恩.png" alt="洛恩">
+                    <div class="character-info">
+                        <div class="character-name">洛恩</div>
+                        <div class="character-title">「恣锐锋镞」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">西风骑士团远程小队副队长，行事不拘一格，钟情于非常规战术的骑士。战场上执锐疾驰，是最锐利的锋矢。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="单手剑">
+                    <img class="character-image" src="../images/杜林.png" alt="杜林">
+                    <div class="character-info">
+                        <div class="character-name">杜林</div>
+                        <div class="character-title">「不熄灭的火」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">在魔女M笔下诞生的龙，借助炼金术获得了人类少年的身体，正在努力学习如何作为一名人类生活下去。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- 璃月 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">⛰️</span>
+                <span>璃月 · 岩与契约的国度</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="geo" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/钟离.png" alt="钟离">
+                    <div class="character-info">
+                        <div class="character-name">钟离</div>
+                        <div class="character-title">「往生堂客卿」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">往生堂的神秘客卿，博古通今。真实身份是璃月的岩神「摩拉克斯」，以契约守护璃月千年。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="弓">
+                    <img class="character-image" src="../images/甘雨.png" alt="甘雨">
+                    <div class="character-info">
+                        <div class="character-name">甘雨</div>
+                        <div class="character-title">「循循守月」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">月海亭的秘书，半人半仙的血统。工作认真负责，但常常加班到深夜，性格温柔内向。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/魈.png" alt="魈">
+                    <div class="character-info">
+                        <div class="character-name">魈</div>
+                        <div class="character-title">「降魔大圣」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">璃月最后一位护法夜叉，被称为「降魔大圣」。背负着千年业障，独自守护璃月免受妖邪侵扰。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/胡桃.png" alt="胡桃">
+                    <div class="character-info">
+                        <div class="character-name">胡桃</div>
+                        <div class="character-title">「雪霁梅香」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">往生堂第七十七代堂主，活泼开朗的少女。虽然经营着丧葬业务，但总是充满活力和奇思妙想。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="弓">
+                    <img class="character-image" src="../images/夜兰.png" alt="夜兰">
+                    <div class="character-info">
+                        <div class="character-name">夜兰</div>
+                        <div class="character-title">「兰生月影」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">任职于璃月总务司的情报官，行踪神秘。擅长情报收集和暗中行动，实力深不可测。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/申鹤.png" alt="申鹤">
+                    <div class="character-info">
+                        <div class="character-name">申鹤</div>
+                        <div class="character-title">「孤辰茕怀」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">自幼被仙人收养的神秘少女，拥有「孤辰之命」。性格冷淡，不善与人交往，但内心善良。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="dendro" data-weapon="法器">
+                    <img class="character-image" src="../images/白术.png" alt="白术">
+                    <div class="character-info">
+                        <div class="character-name">白术</div>
+                        <div class="character-title">「药师」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">不卜庐的药师，医术高超。身边总跟着一条名为「长生」的小蛇，性格温和，乐于助人。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="法器">
+                    <img class="character-image" src="../images/闲云.png" alt="闲云">
+                    <div class="character-info">
+                        <div class="character-name">闲云</div>
+                        <div class="character-title">「云间仙人」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">璃月的仙人之一，性格随和。擅长风水之术，常以云雾为伴，悠然自得。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="geo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/兹白.png" alt="兹白">
+                    <div class="character-info">
+                        <div class="character-name">兹白</div>
+                        <div class="character-title">「驹隙隐泉」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">璃月传说中的白马仙人，其痕迹留存于各种书籍与民话中，是璃月仙话中最神秘的一位。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- 稻妻 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">⚡</span>
+                <span>稻妻 · 雷与永恒的国度</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="electro" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/雷电将军.png" alt="雷电将军">
+                    <div class="character-info">
+                        <div class="character-name">雷电将军</div>
+                        <div class="character-title">「一心净土」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-electro">雷</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">稻妻的雷神「巴尔」，追求永恒的神明。以无想的一刀守护稻妻，统治着这片雷电之国。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/神里绫华.png" alt="神里绫华">
+                    <div class="character-info">
+                        <div class="character-name">神里绫华</div>
+                        <div class="character-title">「白鹭霜华」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">社奉行神里家的大小姐，被称为「白鹭公主」。优雅高贵，剑术精湛，深受稻妻民众爱戴。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/枫原万叶.png" alt="枫原万叶">
+                    <div class="character-info">
+                        <div class="character-name">枫原万叶</div>
+                        <div class="character-title">「红叶逐荒波」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">流浪武士，曾经的贵族后裔。性格豁达，擅长作诗，以风之剑术游历四方。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="弓">
+                    <img class="character-image" src="../images/宵宫.png" alt="宵宫">
+                    <div class="character-info">
+                        <div class="character-name">宵宫</div>
+                        <div class="character-title">「长野原烟花会」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">长野原烟花店的店主，活泼开朗的少女。擅长制作各种绚丽的烟花，为稻妻带来欢乐。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="electro" data-weapon="法器">
+                    <img class="character-image" src="../images/八重神子.png" alt="八重神子">
+                    <div class="character-info">
+                        <div class="character-name">八重神子</div>
+                        <div class="character-title">「浮世笑百姿」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-electro">雷</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">鸣神大社的宫司大人，八重堂的创始人。狡黠聪慧，喜欢恶作剧，是雷神最信赖的友人。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="单手剑">
+                    <img class="character-image" src="../images/神里绫人.png" alt="神里绫人">
+                    <div class="character-info">
+                        <div class="character-name">神里绫人</div>
+                        <div class="character-title">「苍流涟波」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">社奉行神里家的家主，绫华的兄长。沉稳睿智，以水之剑术守护家族和稻妻。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="geo" data-weapon="双手剑">
+                    <img class="character-image" src="../images/荒泷一斗.png" alt="荒泷一斗">
+                    <div class="character-info">
+                        <div class="character-name">荒泷一斗</div>
+                        <div class="character-title">「最凶最恶的鬼族老大」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">荒泷派的老大，豪爽的鬼族后裔。虽然看起来粗犷，但重情重义，深受手下爱戴。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="法器">
+                    <img class="character-image" src="../images/珊瑚宫心海.png" alt="珊瑚宫心海">
+                    <div class="character-info">
+                        <div class="character-name">珊瑚宫心海</div>
+                        <div class="character-title">「深海独酌」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">海祇岛的现人神巫女，智谋过人的军事家。领导海祇岛反抗军，以卓越的战术闻名。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="geo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/千织.png" alt="千织">
+                    <div class="character-info">
+                        <div class="character-name">千织</div>
+                        <div class="character-title">「织裳师」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">稻妻的织裳师，技艺精湛。性格直爽，对自己的作品有着极高的自信和要求。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="法器">
+                    <img class="character-image" src="../images/梦见月瑞希.png" alt="梦见月瑞希">
+                    <div class="character-info">
+                        <div class="character-name">梦见月瑞希</div>
+                        <div class="character-title">「绮梦缱绻」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">「秋沙钱汤」的大股东，梦貘一族的心理诊疗师，致力于驱散噩梦，为人们带来安宁的心境。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- 须弥 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">🌿</span>
+                <span>须弥 · 草与智慧的国度</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="dendro" data-weapon="法器">
+                    <img class="character-image" src="../images/纳西妲.png" alt="纳西妲">
+                    <div class="character-info">
+                        <div class="character-name">纳西妲</div>
+                        <div class="character-title">「白草净华」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">须弥的草神「布耶尔」，智慧之神。虽然外表年幼，却拥有无上的智慧，守护着世界树。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="electro" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/赛诺.png" alt="赛诺">
+                    <div class="character-info">
+                        <div class="character-name">赛诺</div>
+                        <div class="character-title">「缄默的裁遣」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-electro">雷</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">教令院的大风纪官，负责维护教令院的纪律。性格严肃，但私底下是个冷笑话爱好者。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="单手剑">
+                    <img class="character-image" src="../images/妮露.png" alt="妮露">
+                    <div class="character-info">
+                        <div class="character-name">妮露</div>
+                        <div class="character-title">「莲舞霓裳」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">大巴扎的舞者，舞姿优美动人。性格温柔善良，深受须弥民众喜爱。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="dendro" data-weapon="弓">
+                    <img class="character-image" src="../images/提纳里.png" alt="提纳里">
+                    <div class="character-info">
+                        <div class="character-name">提纳里</div>
+                        <div class="character-title">「浅蔚轻行」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">道成林的巡林官，负责守护雨林。性格认真负责，对生态有着深入的了解。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="dendro" data-weapon="单手剑">
+                    <img class="character-image" src="../images/艾尔海森.png" alt="艾尔海森">
+                    <div class="character-info">
+                        <div class="character-name">艾尔海森</div>
+                        <div class="character-title">「诲韬的诤言」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">教令院的书记官，才华横溢的学者。性格理性冷静，追求知识和真理。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="双手剑">
+                    <img class="character-image" src="../images/迪希雅.png" alt="迪希雅">
+                    <div class="character-info">
+                        <div class="character-name">迪希雅</div>
+                        <div class="character-title">「炽鬃之狮」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">沙漠中的佣兵，豪爽直率的女性。擅长使用火焰之力，为正义而战。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="法器">
+                    <img class="character-image" src="../images/流浪者.png" alt="流浪者">
+                    <div class="character-info">
+                        <div class="character-name">流浪者</div>
+                        <div class="character-title">「久世歌浮」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">曾经的人偶，如今以流浪者的身份游历四方。性格傲娇毒舌，但内心有着复杂的情感。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- 枫丹 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">💧</span>
+                <span>枫丹 · 水与正义的国度</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="hydro" data-weapon="法器">
+                    <img class="character-image" src="../images/那维莱特.png" alt="那维莱特">
+                    <div class="character-info">
+                        <div class="character-name">那维莱特</div>
+                        <div class="character-title">「谕告的潮音」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">枫丹的最高审判官，公正严明。以水之力审判罪恶，守护枫丹的正义。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="法器">
+                    <img class="character-image" src="../images/莱欧斯利.png" alt="莱欧斯利">
+                    <div class="character-info">
+                        <div class="character-name">莱欧斯利</div>
+                        <div class="character-title">「寂罪密使」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">梅洛彼得堡的典狱长，管理着枫丹最大的监狱。性格沉稳，以铁腕维持秩序。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="单手剑">
+                    <img class="character-image" src="../images/芙宁娜.png" alt="芙宁娜">
+                    <div class="character-info">
+                        <div class="character-name">芙宁娜</div>
+                        <div class="character-title">「不休独舞」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">枫丹的水神「芙卡洛斯」，热爱表演和戏剧。性格活泼开朗，为枫丹带来欢乐。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="geo" data-weapon="双手剑">
+                    <img class="character-image" src="../images/娜维娅.png" alt="娜维娅">
+                    <div class="character-info">
+                        <div class="character-name">娜维娅</div>
+                        <div class="character-title">「明花蔓舵」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">刺玫会的会长，性格坚毅的女性。以岩之剑守护伙伴，领导刺玫会走向光明。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="弓">
+                    <img class="character-image" src="../images/林尼.png" alt="林尼">
+                    <div class="character-info">
+                        <div class="character-name">林尼</div>
+                        <div class="character-title">「惑光幻戏」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">枫丹的魔术师，擅长各种精彩的表演。性格幽默风趣，总能带给观众惊喜。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="electro" data-weapon="单手剑">
+                    <img class="character-image" src="../images/克洛琳德.png" alt="克洛琳德">
+                    <div class="character-info">
+                        <div class="character-name">克洛琳德</div>
+                        <div class="character-title">「明律的罚赎」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-electro">雷</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">枫丹的决斗代理人，剑术高超。以雷之剑执行正义，是枫丹最强大的战士之一。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="弓">
+                    <img class="character-image" src="../images/希格雯.png" alt="希格雯">
+                    <div class="character-info">
+                        <div class="character-name">希格雯</div>
+                        <div class="character-title">「悠思轻愈」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">梅洛彼得堡的护士长，温柔善良。以水之力治愈伤者，是囚犯们心中的天使。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="dendro" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/艾梅莉埃.png" alt="艾梅莉埃">
+                    <div class="character-info">
+                        <div class="character-name">艾梅莉埃</div>
+                        <div class="character-title">「调香师」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">枫丹的调香师，擅长制作各种神奇的香水。以草之力调和自然，性格优雅知性。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/爱可菲.png" alt="爱可菲">
+                    <div class="character-info">
+                        <div class="character-name">爱可菲</div>
+                        <div class="character-title">「明绚千韵」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">闻名枫丹的前德波大饭店主厨，有着「甜点大校」荣誉的「技术料理」先驱，对烹饪的要求无比严格。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- 纳塔 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">🔥</span>
+                <span>纳塔 · 火与战争的国度</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="pyro" data-weapon="双手剑">
+                    <img class="character-image" src="../images/玛薇卡.png" alt="玛薇卡">
+                    <div class="character-info">
+                        <div class="character-name">玛薇卡</div>
+                        <div class="character-title">「炽焰神主」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">纳塔的焰神，强大的火焰战士。以无上的火焰之力守护纳塔，性格豪迈热情。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="anemo" data-weapon="弓">
+                    <img class="character-image" src="../images/恰斯卡.png" alt="恰斯卡">
+                    <div class="character-info">
+                        <div class="character-name">恰斯卡</div>
+                        <div class="character-title">「巡宇翦定」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-anemo">风</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">特拉洛坎的「调停人」，被绒翼龙抚养长大，万千争端的终结者。无论以言辞还是弹药，一切矛盾皆止于此。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="cryo" data-weapon="法器">
+                    <img class="character-image" src="../images/茜特菈莉.png" alt="茜特菈莉">
+                    <div class="character-info">
+                        <div class="character-name">茜特菈莉</div>
+                        <div class="character-title">「白星黑曜」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">烟谜主的大萨满，令所有族人敬畏的「黑曜石奶奶」。纳塔当下唯一的大萨满，活着的传奇。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="dendro" data-weapon="双手剑">
+                    <img class="character-image" src="../images/基尼奇.png" alt="基尼奇">
+                    <div class="character-info">
+                        <div class="character-name">基尼奇</div>
+                        <div class="character-title">「回火之狩」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">双手剑</span>
+                        </div>
+                        <div class="character-desc">维茨特兰的猎龙人，精于度量代价。仿佛天赐的猎杀者，稳定、直接、高效，万事万物皆有代价。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="hydro" data-weapon="法器">
+                    <img class="character-image" src="../images/玛拉妮.png" alt="玛拉妮">
+                    <div class="character-info">
+                        <div class="character-name">玛拉妮</div>
+                        <div class="character-title">「哗啦啦逐浪客」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">纳塔远近闻名的向导，水上用品商店的经营者，精通各类水上运动的逐浪客。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="geo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/希诺宁.png" alt="希诺宁">
+                    <div class="character-info">
+                        <div class="character-name">希诺宁</div>
+                        <div class="character-title">「焮火铸魂」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">纳茨卡延的铸名师，善于在工作的重担与舒适的生活之间找到平衡点。淬炼故事，铸造「古名」。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="electro" data-weapon="法器">
+                    <img class="character-image" src="../images/瓦雷莎.png" alt="瓦雷莎">
+                    <div class="character-info">
+                        <div class="character-name">瓦雷莎</div>
+                        <div class="character-title">「悠暇豪劲」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-electro">雷</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">悠悠哉哉，无比松弛的「沃陆之邦」战士兼果园主，喜欢充满力量的英雄与巨量美食。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- 挪德卡莱 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">❄️</span>
+                <span>挪德卡莱 · 冰雪与神秘之地</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="hydro" data-weapon="法器">
+                    <img class="character-image" src="../images/哥伦比娅.png" alt="哥伦比娅">
+                    <div class="character-info">
+                        <div class="character-name">哥伦比娅</div>
+                        <div class="character-title">「空月归乡」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-hydro">水</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">于挪德卡莱诞生的「月之少女」，亦是归乡的空月。原愚人众执行官第三席「少女」，现为完整的月神。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="dendro" data-weapon="法器">
+                    <img class="character-image" src="../images/菈乌玛.png" alt="菈乌玛">
+                    <div class="character-info">
+                        <div class="character-name">菈乌玛</div>
+                        <div class="character-title">「永月的祀歌」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">被月光与森林祝福的圣女，「霜月之子」中的苍林圣女，以月神的代理身份回应信徒的祈愿。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="electro" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/菲林斯.png" alt="菲林斯">
+                    <div class="character-info">
+                        <div class="character-name">菲林斯</div>
+                        <div class="character-title">「诡灯陌影」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-electro">雷</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">挪德卡莱的「执灯人」，看守着北方小岛上的灯塔与墓地。一位言行举止极富修养的神秘绅士。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="dendro" data-weapon="法器">
+                    <img class="character-image" src="../images/奈芙尔.png" alt="奈芙尔">
+                    <div class="character-info">
+                        <div class="character-name">奈芙尔</div>
+                        <div class="character-title">「湮沙的秘闻」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-dendro">草</span>
+                            <span class="meta-tag weapon-tag">法器</span>
+                        </div>
+                        <div class="character-desc">神通广大的「秘闻馆」之主，出身须弥。即便是狼狈不堪的胜利，也好过体面的认输。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="electro" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/伊涅芙.png" alt="伊涅芙">
+                    <div class="character-info">
+                        <div class="character-name">伊涅芙</div>
+                        <div class="character-title">「轰隆雷鸣波」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-electro">雷</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">集成了各国机关部件的全能型家用机器人，胸口处的秘源核心已历经弥久岁月。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="geo" data-weapon="弓">
+                    <img class="character-image" src="../images/莉奈娅.png" alt="莉奈娅">
+                    <div class="character-info">
+                        <div class="character-name">莉奈娅</div>
+                        <div class="character-title">「博闻异旅」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-geo">岩</span>
+                            <span class="meta-tag weapon-tag">弓</span>
+                        </div>
+                        <div class="character-desc">冒险家协会挪德卡莱分会顾问、博物学家。永远在路上的行者，怀揣厚重图鉴迈向未知远方。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- 其他 -->
+        <section class="region-section">
+            <h2 class="region-title">
+                <span class="region-icon">🌟</span>
+                <span>其他 · 来自远方的旅者</span>
+                <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+            </h2>
+            <div class="region-content">
+            <div class="scroll-wrapper">
+                <button class="scroll-arrow left">‹</button>
+                <div class="characters-scroll">
+                <div class="character-card" data-element="cryo" data-weapon="单手剑">
+                    <img class="character-image" src="../images/丝柯克.png" alt="丝柯克">
+                    <div class="character-info">
+                        <div class="character-name">丝柯克</div>
+                        <div class="character-title">「冰之剑士」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-cryo">冰</span>
+                            <span class="meta-tag weapon-tag">单手剑</span>
+                        </div>
+                        <div class="character-desc">神秘的冰之剑士，来自远方。拥有独特的战斗风格，实力深不可测。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-element="pyro" data-weapon="长柄武器">
+                    <img class="character-image" src="../images/阿蕾奇诺.png" alt="阿蕾奇诺">
+                    <div class="character-info">
+                        <div class="character-name">阿蕾奇诺</div>
+                        <div class="character-title">「愚人众执行官」</div>
+                        <div class="character-meta">
+                            <span class="meta-tag element-tag element-pyro">火</span>
+                            <span class="meta-tag weapon-tag">长柄武器</span>
+                        </div>
+                        <div class="character-desc">至冬愚人众的执行官之一，代号「仆人」。性格冷酷，实力强大，是旅行者强劲的对手。</div>
+                        <div class="card-expand-hint"><span class="hint-icon">▼</span> <span class="hint-text">点击收起详情</span></div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right">›</button>
+            </div>
+        </div>
+        </section>
+
+        <footer>
+            <p>✨ 原神五星角色图鉴 ✨</p>
+            <p>数据更新至 2026年7月 · 共收录 74 位五星角色</p>
+            <p>© 米哈游 · 原神 Genshin Impact</p>
+        </footer>
+    </div>
+
+    <!-- 派蒙悬浮按钮（像素风） -->
+    <div class="paimon-float-btn" id="paimonBtn" title="和派蒙聊天">
+        <div class="paimon-sprite">
+            <img src="../images/paimon-pixel.png" alt="派蒙像素风">
+        </div>
+        <!-- 角色动作特效 -->
+        <div class="paimon-effect" id="paimonEffect"></div>
+        <div class="paimon-status" id="paimonStatus">😊</div>
+        <!-- 情绪泡泡 -->
+        <div class="paimon-bubble" id="paimonBubble">诶嘿~</div>
+    </div>
+
+    <!-- 聊天窗口 -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-header-title">
+                <span>⭐</span>
+                <span>派蒙助手</span>
+            </div>
+            <button class="chat-close-btn" id="chatCloseBtn">✕</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- 快捷问题按钮 -->
+            <div class="quick-questions" id="quickQuestions">
+                <div class="quick-q-title">🔍 问问派蒙（派蒙会联网搜索最新攻略哦～）：</div>
+                <div class="quick-q-grid">
+                    <button class="quick-q-btn" data-question="纳西妲2026年最新配队推荐">🌿 纳西妲最新配队</button>
+                    <button class="quick-q-btn" data-question="原神2026年最新深渊12层满星攻略">🏆 本期深渊攻略</button>
+                    <button class="quick-q-btn" data-question="芙宁娜2026年圣遗物武器推荐">💧 芙宁娜培养攻略</button>
+                    <button class="quick-q-btn" data-question="原神2026年最新角色强度排行榜">📊 最新强度榜</button>
+                    <button class="quick-q-btn" data-question="那维莱特2026年最新配队">🐉 那维莱特配队</button>
+                    <button class="quick-q-btn" data-question="原神当前版本的大活动是什么？派蒙帮我去网上搜一下最新的！">🎪 当前版本活动</button>
+                    <button class="quick-q-btn" data-question="仆人阿蕾奇诺怎么配队圣遗物">🔥 仆人培养</button>
+                    <button class="quick-q-btn" data-question="玛薇卡2026年配队推荐">⚡ 玛薇卡配队</button>
+                </div>
+            </div>
+            
+            <div class="chat-message assistant">
+                <div class="chat-avatar pixel-avatar">
+                    <img src="../images/paimon-pixel.png" alt="派蒙">
+                </div>
+                <div class="chat-bubble">旅行者你好呀！✨ 派蒙现在升级为 **提瓦特百科与攻略向导** 啦～ 任何关于角色配队、武器圣遗物、深渊攻略的问题，派蒙都会联网搜索最新情报给你！快试试下面的快捷问题吧～ 🔍🌟</div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="问派蒙一些关于原神的问题..." autocomplete="off">
+            <button class="chat-send-btn" id="chatSendBtn">➤</button>
+        </div>
+    </div>
+
+    <script src="../js/filter.js"></script>
+    <script src="../js/paimon-chat.js"></script>
+</body>
+</html>

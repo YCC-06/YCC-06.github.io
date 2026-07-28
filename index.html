@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site-container">
+        <!-- ===== 顶部导航 ===== -->
+        <nav class="site-nav">
+            <a href="index.html" class="active">🏠 首页</a>
+            <a href="genshin/index.html">✨ 原神图鉴</a>
+            <a href="#blog">📝 博客</a>
+            <a href="#projects">💻 项目</a>
+        </nav>
+
+        <!-- ===== 英雄区 / 个人简介 ===== -->
+        <header class="hero">
+            <div class="hero-avatar">👤</div>
+            <h1>你好，我是 <span style="background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">旅行者</span></h1>
+            <p class="tagline">🚀 开发者 · 游戏玩家 · 提瓦特大陆漫游者</p>
+            <p class="bio">
+                欢迎来到我的个人网站！这里记录着我的技术探索、游戏心得和生活随笔。
+                我热爱前端开发、开源贡献，当然还有提瓦特大陆的冒险 🌟
+            </p>
+            <div class="social-links">
+                <a href="#" class="social-link">🐙 GitHub</a>
+                <a href="#" class="social-link">📧 联系我</a>
+                <a href="genshin/index.html" class="social-link">✨ 原神图鉴</a>
+            </div>
+        </header>
+
+        <!-- ===== 项目展示 ===== -->
+        <section class="site-section" id="projects">
+            <h2 class="site-section-title">💻 项目展示</h2>
+            <div class="project-grid">
+                <a href="genshin/index.html" class="project-card">
+                    <div class="project-card-icon">✨</div>
+                    <div class="project-card-title">原神图鉴</div>
+                    <div class="project-card-desc">
+                        收录提瓦特大陆全部五星角色与圣遗物，支持元素/武器筛选、地区分组、角色详情查看，还有派蒙 AI 助手陪你聊天！
+                    </div>
+                </a>
+                <div class="project-card">
+                    <div class="project-card-icon">🚧</div>
+                    <div class="project-card-title">更多项目开发中 ...</div>
+                    <div class="project-card-desc">
+                        这里将展示更多我的作品，敬请期待！
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 博客/文章 ===== -->
+        <section class="site-section" id="blog">
+            <h2 class="site-section-title">📝 最新文章</h2>
+            <div class="blog-list">
+
+                <article class="blog-post" onclick="alert('文章详情页建设中...')">
+                    <div class="blog-post-title">📄 从零搭建一个原神图鉴网站</div>
+                    <div class="blog-post-meta">📅 2026-07-28 · ☕ 预计阅读 5 分钟</div>
+                    <div class="blog-post-summary">
+                        记录了如何从一个想法到实现完整原神角色图鉴的过程，包括数据收集、UI 设计、筛选项实现、派蒙聊天助手接入等实战经验分享。
+                    </div>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">前端</span>
+                        <span class="blog-post-tag">HTML/CSS</span>
+                        <span class="blog-post-tag">JavaScript</span>
+                        <span class="blog-post-tag">原神</span>
+                    </div>
+                </article>
+
+                <article class="blog-post" onclick="alert('文章详情页建设中...')">
+                    <div class="blog-post-title">📄 我的第一个个人网站：技术栈与心得</div>
+                    <div class="blog-post-meta">📅 2026-07-28 · ☕ 预计阅读 3 分钟</div>
+                    <div class="blog-post-summary">
+                        分享搭建这个个人网站过程中使用的技术、踩过的坑，以及对静态网站托管服务（GitHub Pages、Netlify、Vercel）的对比和选择建议。
+                    </div>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">个人网站</span>
+                        <span class="blog-post-tag">部署</span>
+                        <span class="blog-post-tag">GitHub Pages</span>
+                    </div>
+                </article>
+
+                <article class="blog-post" onclick="alert('文章详情页建设中...')">
+                    <div class="blog-post-title">🎮 原神 5.x 版本角色强度个人向排名</div>
+                    <div class="blog-post-meta">📅 2026-07-25 · ☕ 预计阅读 8 分钟</div>
+                    <div class="blog-post-summary">
+                        基于个人游戏体验和社区讨论，整理了当前版本各角色的强度评级、配队推荐和抽取建议。纯主观向，欢迎讨论～
+                    </div>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">原神</span>
+                        <span class="blog-post-tag">强度榜</span>
+                        <span class="blog-post-tag">游戏攻略</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===== 页脚 ===== -->
+        <footer class="site-footer">
+            <p>© 2026 · 用 ❤️ 和 ☕ 打造</p>
+            <p>Powered by 纯 HTML + CSS + JavaScript · 托管于 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+        </footer>
+    </div>
+</body>
+</html>

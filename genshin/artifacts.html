@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神图鉴 · 圣遗物</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ 原神图鉴 ✨</h1>
+            <p class="subtitle">角色 · 圣遗物 · 提瓦特大陆全收录</p>
+            <div class="nav-tabs">
+                <a href="../index.html" class="nav-tab">🏠 个人主页</a>
+                <a href="index.html" class="nav-tab">🎭 角色</a>
+                <a href="artifacts.html" class="nav-tab active">💠 圣遗物</a>
+            </div>
+        </header>
+
+        <!-- 筛选区 -->
+        <section class="filter-section">
+            <div class="filter-group">
+                <span class="filter-label">💠 稀有度筛选</span>
+                <div class="filter-buttons" id="rarityFilter">
+                    <button class="filter-btn reset-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="5">⭐⭐⭐⭐⭐ 五星</button>
+                    <button class="filter-btn" data-filter="4">⭐⭐⭐⭐ 四星</button>
+                    <button class="filter-btn" data-filter="3">⭐⭐⭐ 三星</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">🌍 地区筛选</span>
+                <div class="filter-buttons" id="regionFilter">
+                    <button class="filter-btn reset-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="蒙德">🌪️ 蒙德</button>
+                    <button class="filter-btn" data-filter="璃月">⛰️ 璃月</button>
+                    <button class="filter-btn" data-filter="稻妻">⚡ 稻妻</button>
+                    <button class="filter-btn" data-filter="须弥">🌿 须弥</button>
+                    <button class="filter-btn" data-filter="枫丹">💧 枫丹</button>
+                    <button class="filter-btn" data-filter="纳塔">🔥 纳塔</button>
+                    <button class="filter-btn" data-filter="通用">🌟 通用</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="no-results" id="noResults">😢 没有符合条件的圣遗物</div>
+
+        <!-- 圣遗物列表 -->
+        <div id="artifactsContainer"></div>
+
+        <footer>
+            <p>✨ 原神图鉴 ✨</p>
+            <p>数据更新至 2026年7月 · 共收录 <span id="artifactCount"></span> 套圣遗物</p>
+            <p>© 米哈游 · 原神 Genshin Impact</p>
+        </footer>
+    </div>
+
+    <script src="../js/artifacts-data.js"></script>
+    <script>
+        const container = document.getElementById('artifactsContainer');
+        const noResults = document.getElementById('noResults');
+        const artifactCount = document.getElementById('artifactCount');
+
+        // 当前筛选状态
+        let currentRarity = 'all';
+        let currentRegion = 'all';
+
+        // 渲染圣遗物卡片
+        function renderArtifacts() {
+            const filtered = artifactsData.filter(a => {
+                const rarityMatch = currentRarity === 'all' || a.rarity === parseInt(currentRarity);
+                const regionMatch = currentRegion === 'all' || a.region === currentRegion;
+                return rarityMatch && regionMatch;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                noResults.classList.add('show');
+                return;
+            }
+            noResults.classList.remove('show');
+
+            // 按稀有度分组
+            const groups = {};
+            filtered.forEach(a => {
+                const key = a.rarity + '星';
+                if (!groups[key]) groups[key] = [];
+                groups[key].push(a);
+            });
+
+            let html = '';
+            const rarityOrder = ['5星', '4星', '3星'];
+            rarityOrder.forEach(key => {
+                if (!groups[key]) return;
+                const starLabel = { '5星': '⭐⭐⭐⭐⭐', '4星': '⭐⭐⭐⭐', '3星': '⭐⭐⭐' };
+                const starColor = { '5星': '#ffd700', '4星': '#c084fc', '3星': '#48cae4' };
+                html += `
+                    <section class="region-section">
+                        <h2 class="region-title">
+                            <span class="region-icon">💠</span>
+                            <span style="color:${starColor[key]}">${starLabel[key]}</span>
+                            <span style="color:#666;font-size:0.6em">（${groups[key].length}套）</span>
+                            <span class="region-toggle"><span class="region-toggle-icon">▼</span></span>
+                        </h2>
+                        <div class="region-content">
+                            <div class="scroll-wrapper">
+                                <button class="scroll-arrow left">‹</button>
+                                <div class="characters-scroll">
+                `;
+                groups[key].forEach(a => {
+                    html += `
+                        <div class="artifact-card" data-rarity="${a.rarity}" data-region="${a.region}">
+                            <div class="artifact-icon" style="background: linear-gradient(135deg, ${a.color}, ${a.color}cc);">
+                                ${a.imgUrl ? `<img src="${a.imgUrl}" alt="${a.name}" class="artifact-img">` : `<span class="artifact-emoji">${a.icon}</span>`}
+                            </div>
+                            <div class="artifact-info">
+                                <div class="artifact-name">${a.name}</div>
+                                <div class="artifact-rarity" style="color:${starColor[key]}">${starLabel[key]}</div>
+                                <div class="artifact-effect">
+                                    <div class="effect-label">🎯 两件套</div>
+                                    <div class="effect-text">${a.twoPiece}</div>
+                                </div>
+                                <div class="artifact-effect">
+                                    <div class="effect-label">🔥 四件套</div>
+                                    <div class="effect-text">${a.fourPiece}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `
+                                </div>
+                                <button class="scroll-arrow right">›</button>
+                            </div>
+                        </div>
+                    </section>
+                `;
+            });
+
+            container.innerHTML = html;
+            artifactCount.textContent = filtered.length;
+
+            // 为每个滚动区域绑定滚动箭头
+            document.querySelectorAll('.artifact-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('collapsed');
+                });
+            });
+        }
+
+        // ===== 筛选按钮 =====
+        document.querySelectorAll('#rarityFilter .filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('#rarityFilter .filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentRarity = this.getAttribute('data-filter');
+                renderArtifacts();
+            });
+        });
+
+        document.querySelectorAll('#regionFilter .filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('#regionFilter .filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentRegion = this.getAttribute('data-filter');
+                renderArtifacts();
+            });
+        });
+
+        // 初始渲染
+        renderArtifacts();
+    </script>
+</body>
+</html>
