@@ -11,3 +11,6 @@ Thumbs.db
 
 # IDE 配置
 .idea/
+
+# 部署产物
+fc/*.zip
