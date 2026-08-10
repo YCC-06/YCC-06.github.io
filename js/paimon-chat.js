@@ -5,6 +5,7 @@
         const chatMessages = document.getElementById('chatMessages');
         const chatInput = document.getElementById('chatInput');
         const chatSendBtn = document.getElementById('chatSendBtn');
+        const chatSearchToggle = document.getElementById('chatSearchToggle');
         const paimonStatus = document.getElementById('paimonStatus');
         const paimonBubble = document.getElementById('paimonBubble');
         const paimonEffect = document.getElementById('paimonEffect');
@@ -243,8 +244,11 @@
             randomMood();
         }, 1000);
 
-        // API 地址 - 指向 Cloudflare Workers 代理（Key 在服务端，见 cloudflare/ 目录）
-        const API_URL = 'https://genshin-chat-proxy.ycc06.workers.dev';
+        // API 地址 - 指向阿里云函数计算（FC）代理（Key 在服务端，见 fc/README.md）
+        // ⚠️ 部署 FC 后，把下面地址替换为你的 FC HTTP 触发器公网访问地址
+        // 旧 Cloudflare Workers 地址（国内网络常不通）：
+        //   https://genshin-chat-proxy.ycc06.workers.dev
+        const API_URL = 'https://genshin-ropmqrqobz.cn-hangzhou.fcapp.run';
         const MODEL = 'qwen3.7-flash';
         const MAX_CONTEXT_TOKENS = 8000; // 上下文窗口管理
 
@@ -653,6 +657,16 @@ A: 纳西妲可是草神小吉祥草王哦！派蒙超喜欢她的！她是草�
         ];
 
         let isLoading = false;
+        let searchEnabled = false; // 联网搜索开关，默认关闭（关闭时响应更快）
+
+        // 联网搜索开关切换
+        if (chatSearchToggle) {
+            chatSearchToggle.addEventListener('click', function() {
+                searchEnabled = !searchEnabled;
+                this.classList.toggle('active', searchEnabled);
+                this.title = searchEnabled ? '已开启联网搜索（响应较慢），点击关闭' : '开启后派蒙会联网搜索（响应更慢）';
+            });
+        }
 
         // 快捷问题按钮事件
         document.querySelectorAll('.quick-q-btn').forEach(btn => {
@@ -806,7 +820,7 @@ A: 纳西妲可是草神小吉祥草王哦！派蒙超喜欢她的！她是草�
                         messages: chatHistory,
                         temperature: 0.8,
                         stream: true,
-                        enable_search: true
+                        enable_search: searchEnabled
                     }),
                     signal: controller.signal
                 });
