@@ -4,7 +4,7 @@ const artifactsData = [
     {
         id: 'viridescent-venerer',
         name: '翠绿之影',
-        imgUrl: "images/artifacts/15002.png",
+        imgUrl: "../images/artifacts/15002.png",
         icon: '🍃',
         color: '#74c69d',
         rarity: 5,
@@ -15,7 +15,7 @@ const artifactsData = [
     {
         id: 'gladiators-finale',
         name: '角斗士的终幕礼',
-        imgUrl: "images/artifacts/15001.png",
+        imgUrl: "../images/artifacts/15001.png",
         icon: '⚔️',
         color: '#b8856c',
         rarity: 5,
@@ -26,7 +26,7 @@ const artifactsData = [
     {
         id: 'wanderers-troupe',
         name: '流浪大地的乐团',
-        imgUrl: "images/artifacts/15003.png",
+        imgUrl: "../images/artifacts/15003.png",
         icon: '🎵',
         color: '#c084fc',
         rarity: 5,
@@ -37,7 +37,7 @@ const artifactsData = [
     {
         id: 'bloodstained-chivalry',
         name: '染血的骑士道',
-        imgUrl: "images/artifacts/15008.png",
+        imgUrl: "../images/artifacts/15008.png",
         icon: '🩸',
         color: '#d62828',
         rarity: 5,
@@ -49,7 +49,7 @@ const artifactsData = [
     {
         id: 'archaic-petra',
         name: '悠古的磐岩',
-        imgUrl: "images/artifacts/15014.png",
+        imgUrl: "../images/artifacts/15014.png",
         icon: '🪨',
         color: '#ffc300',
         rarity: 5,
@@ -60,7 +60,7 @@ const artifactsData = [
     {
         id: 'noblesse-oblige',
         name: '昔日宗室之仪',
-        imgUrl: "images/artifacts/15007.png",
+        imgUrl: "../images/artifacts/15007.png",
         icon: '👑',
         color: '#6c5ce7',
         rarity: 5,
@@ -71,7 +71,7 @@ const artifactsData = [
     {
         id: 'retracing-bolide',
         name: '逆飞的流星',
-        imgUrl: "images/artifacts/15015.png",
+        imgUrl: "../images/artifacts/15015.png",
         icon: '☄️',
         color: '#a8a8b0',
         rarity: 5,
@@ -83,7 +83,7 @@ const artifactsData = [
     {
         id: 'emblem-of-severed-fate',
         name: '绝缘之旗印',
-        imgUrl: "images/artifacts/15020.png",
+        imgUrl: "../images/artifacts/15020.png",
         icon: '⚡',
         color: '#9d4edd',
         rarity: 5,
@@ -94,7 +94,7 @@ const artifactsData = [
     {
         id: 'shimenawa-reminiscence',
         name: '追忆之注连',
-        imgUrl: "images/artifacts/15019.png",
+        imgUrl: "../images/artifacts/15019.png",
         icon: '🌸',
         color: '#e8796e',
         rarity: 5,
@@ -105,7 +105,7 @@ const artifactsData = [
     {
         id: 'husk-of-opulent-dreams',
         name: '华馆梦醒形骸记',
-        imgUrl: "images/artifacts/15021.png",
+        imgUrl: "../images/artifacts/15021.png",
         icon: '🏛️',
         color: '#a0aec0',
         rarity: 5,
@@ -116,7 +116,7 @@ const artifactsData = [
     {
         id: 'ocean-hued-clam',
         name: '海染砗磲',
-        imgUrl: "images/artifacts/15022.png",
+        imgUrl: "../images/artifacts/15022.png",
         icon: '🐚',
         color: '#48cae4',
         rarity: 5,
@@ -128,7 +128,7 @@ const artifactsData = [
     {
         id: 'deepwood-memories',
         name: '深林的记忆',
-        imgUrl: "images/artifacts/15025.png",
+        imgUrl: "../images/artifacts/15025.png",
         icon: '🌿',
         color: '#55a630',
         rarity: 5,
@@ -139,7 +139,7 @@ const artifactsData = [
     {
         id: 'gilded-dreams',
         name: '饰金之梦',
-        imgUrl: "images/artifacts/15026.png",
+        imgUrl: "../images/artifacts/15026.png",
         icon: '🌙',
         color: '#ffb347',
         rarity: 5,
@@ -150,7 +150,7 @@ const artifactsData = [
     {
         id: 'flower-of-paradise-lost',
         name: '乐园遗落之花',
-        imgUrl: "images/artifacts/15028.png",
+        imgUrl: "../images/artifacts/15028.png",
         icon: '🌸',
         color: '#ff6b9d',
         rarity: 5,
@@ -161,7 +161,7 @@ const artifactsData = [
     {
         id: 'desert-pavilion-chronicle',
         name: '沙上楼阁史话',
-        imgUrl: "images/artifacts/15027.png",
+        imgUrl: "../images/artifacts/15027.png",
         icon: '🏜️',
         color: '#d4a373',
         rarity: 5,
@@ -173,7 +173,7 @@ const artifactsData = [
     {
         id: 'marechaussee-hunter',
         name: '逐影猎人',
-        imgUrl: "images/artifacts/15031.png",
+        imgUrl: "../images/artifacts/15031.png",
         icon: '🎯',
         color: '#667eea',
         rarity: 5,
@@ -184,7 +184,7 @@ const artifactsData = [
     {
         id: 'golden-troupe',
         name: '黄金剧团',
-        imgUrl: "images/artifacts/15032.png",
+        imgUrl: "../images/artifacts/15032.png",
         icon: '🎭',
         color: '#ffd700',
         rarity: 5,
@@ -195,7 +195,7 @@ const artifactsData = [
     {
         id: 'vourukasha-glow',
         name: '花海甘露之光',
-        imgUrl: "images/artifacts/15030.png",
+        imgUrl: "../images/artifacts/15030.png",
         icon: '💧',
         color: '#72efdd',
         rarity: 5,
@@ -206,7 +206,7 @@ const artifactsData = [
     {
         id: 'nighttime-whispers',
         name: '回声之林夜话',
-        imgUrl: "images/artifacts/15034.png",
+        imgUrl: "../images/artifacts/15034.png",
         icon: '🌲',
         color: '#6c757d',
         rarity: 5,
@@ -217,7 +217,7 @@ const artifactsData = [
     {
         id: 'song-of-days-past',
         name: '昔时之歌',
-        imgUrl: "images/artifacts/15033.png",
+        imgUrl: "../images/artifacts/15033.png",
         icon: '📜',
         color: '#e8c4a0',
         rarity: 5,
@@ -229,6 +229,7 @@ const artifactsData = [
     {
         id: 'obsidian-codex',
         name: '黑曜秘典',
+        imgUrl: "../images/artifacts/15038.png",
         icon: '📖',
         color: '#1a1a2e',
         rarity: 5,
@@ -239,6 +240,7 @@ const artifactsData = [
     {
         id: 'scroll-of-the-hero-of-cinder-city',
         name: '烬城勇者绘卷',
+        imgUrl: "../images/artifacts/15037.png",
         icon: '🔥',
         color: '#ef476f',
         rarity: 5,
@@ -250,7 +252,7 @@ const artifactsData = [
     {
         id: 'crimson-witch-of-flames',
         name: '炽烈的炎之魔女',
-        imgUrl: "images/artifacts/15006.png",
+        imgUrl: "../images/artifacts/15006.png",
         icon: '🔥',
         color: '#d62828',
         rarity: 5,
@@ -261,7 +263,7 @@ const artifactsData = [
     {
         id: 'thundering-fury',
         name: '如雷的盛怒',
-        imgUrl: "images/artifacts/15005.png",
+        imgUrl: "../images/artifacts/15005.png",
         icon: '⚡',
         color: '#7b2ff7',
         rarity: 5,
@@ -272,7 +274,7 @@ const artifactsData = [
     {
         id: 'heart-of-depth',
         name: '沉沦之心',
-        imgUrl: "images/artifacts/15016.png",
+        imgUrl: "../images/artifacts/15016.png",
         icon: '💧',
         color: '#0096c7',
         rarity: 5,
@@ -283,7 +285,7 @@ const artifactsData = [
     {
         id: 'blizzard-strayer',
         name: '冰风迷途的勇士',
-        imgUrl: "images/artifacts/14001.png",
+        imgUrl: "../images/artifacts/14001.png",
         icon: '❄️',
         color: '#90e0ef',
         rarity: 5,
@@ -294,7 +296,7 @@ const artifactsData = [
     {
         id: 'lavawalker',
         name: '渡过烈火的贤人',
-        imgUrl: "images/artifacts/14003.png",
+        imgUrl: "../images/artifacts/14003.png",
         icon: '🔥',
         color: '#e63946',
         rarity: 5,
@@ -305,7 +307,7 @@ const artifactsData = [
     {
         id: 'thundersoother',
         name: '平息鸣雷的尊者',
-        imgUrl: "images/artifacts/14002.png",
+        imgUrl: "../images/artifacts/14002.png",
         icon: '⚡',
         color: '#6c4ab6',
         rarity: 5,
@@ -316,7 +318,7 @@ const artifactsData = [
     {
         id: 'tenacity-of-the-millelith',
         name: '千岩牢固',
-        imgUrl: "images/artifacts/15017.png",
+        imgUrl: "../images/artifacts/15017.png",
         icon: '🛡️',
         color: '#b87333',
         rarity: 5,
@@ -327,7 +329,7 @@ const artifactsData = [
     {
         id: 'pale-flame',
         name: '苍白之火',
-        imgUrl: "images/artifacts/15018.png",
+        imgUrl: "../images/artifacts/15018.png",
         icon: '💀',
         color: '#6c757d',
         rarity: 5,
@@ -338,7 +340,7 @@ const artifactsData = [
     {
         id: 'vermillion-hereafter',
         name: '辰砂往生录',
-        imgUrl: "images/artifacts/15023.png",
+        imgUrl: "../images/artifacts/15023.png",
         icon: '📿',
         color: '#d64045',
         rarity: 5,
@@ -349,7 +351,7 @@ const artifactsData = [
     {
         id: 'echoes-of-an-offering',
         name: '来歆余响',
-        imgUrl: "images/artifacts/15024.png",
+        imgUrl: "../images/artifacts/15024.png",
         icon: '🔔',
         color: '#e8c4a0',
         rarity: 5,
@@ -360,7 +362,7 @@ const artifactsData = [
     {
         id: 'nymphs-dream',
         name: '水仙之梦',
-        imgUrl: "images/artifacts/15029.png",
+        imgUrl: "../images/artifacts/15029.png",
         icon: '🧚',
         color: '#48cae4',
         rarity: 5,
@@ -371,6 +373,7 @@ const artifactsData = [
     {
         id: 'unfinished-reverie',
         name: '未竟的遐思',
+        imgUrl: "../images/artifacts/15036.png",
         icon: '💭',
         color: '#a78bfa',
         rarity: 5,
@@ -382,6 +385,7 @@ const artifactsData = [
     {
         id: 'nod-krai-天之美赐',
         name: '天之美赐',
+        imgUrl: "../images/artifacts/15045.png",
         icon: '✨',
         color: '#ffd700',
         rarity: 5,
@@ -394,6 +398,7 @@ const artifactsData = [
     {
         id: 'nod-krai-影中沉凝的幻灭',
         name: '影中沉凝的幻灭',
+        imgUrl: "../images/artifacts/15046.png",
         icon: '🌑',
         color: '#6c5ce7',
         rarity: 5,
@@ -406,6 +411,7 @@ const artifactsData = [
     {
         id: 'nod-krai-晨星与月的晓歌',
         name: '晨星与月的晓歌',
+        imgUrl: "../images/artifacts/15043.png",
         icon: '🌙',
         color: '#a8b4ff',
         rarity: 5,
@@ -418,6 +424,7 @@ const artifactsData = [
     {
         id: 'nod-krai-风起之日',
         name: '风起之日',
+        imgUrl: "../images/artifacts/15044.png",
         icon: '🌪️',
         color: '#74c69d',
         rarity: 5,
@@ -430,6 +437,7 @@ const artifactsData = [
     {
         id: 'nod-krai-穹境示现之夜',
         name: '穹境示现之夜',
+        imgUrl: "../images/artifacts/15041.png",
         icon: '🌌',
         color: '#1a1a2e',
         rarity: 5,
@@ -442,6 +450,7 @@ const artifactsData = [
     {
         id: 'nod-krai-纺月的夜歌',
         name: '纺月的夜歌',
+        imgUrl: "../images/artifacts/15042.png",
         icon: '🎵',
         color: '#c084fc',
         rarity: 5,
@@ -454,6 +463,7 @@ const artifactsData = [
     {
         id: 'nod-krai-深廊终曲',
         name: '深廊终曲',
+        imgUrl: "../images/artifacts/15040.png",
         icon: '❄️',
         color: '#90e0ef',
         rarity: 5,
@@ -466,6 +476,7 @@ const artifactsData = [
     {
         id: 'nod-krai-长夜之誓',
         name: '长夜之誓',
+        imgUrl: "../images/artifacts/15039.png",
         icon: '⚔️',
         color: '#b87333',
         rarity: 5,
@@ -478,7 +489,7 @@ const artifactsData = [
     {
         id: 'instructor',
         name: '教官',
-        imgUrl: "images/artifacts/10007.png",
+        imgUrl: "../images/artifacts/10007.png",
         icon: '📚',
         color: '#4a90d9',
         rarity: 4,
@@ -489,7 +500,7 @@ const artifactsData = [
     {
         id: 'exile',
         name: '流放者',
-        imgUrl: "images/artifacts/10009.png",
+        imgUrl: "../images/artifacts/10009.png",
         icon: '🔗',
         color: '#8c8c8c',
         rarity: 4,
@@ -500,7 +511,7 @@ const artifactsData = [
     {
         id: 'scholar',
         name: '学士',
-        imgUrl: "images/artifacts/10012.png",
+        imgUrl: "../images/artifacts/10012.png",
         icon: '🎓',
         color: '#6c757d',
         rarity: 4,
@@ -511,7 +522,7 @@ const artifactsData = [
     {
         id: 'berserker',
         name: '战狂',
-        imgUrl: "images/artifacts/10005.png",
+        imgUrl: "../images/artifacts/10005.png",
         icon: '⚔️',
         color: '#d62828',
         rarity: 4,
@@ -522,7 +533,7 @@ const artifactsData = [
     {
         id: 'martial-artist',
         name: '武人',
-        imgUrl: "images/artifacts/10008.png",
+        imgUrl: "../images/artifacts/10008.png",
         icon: '🥋',
         color: '#b87333',
         rarity: 4,
@@ -533,7 +544,7 @@ const artifactsData = [
     {
         id: 'gambler',
         name: '赌徒',
-        imgUrl: "images/artifacts/10013.png",
+        imgUrl: "../images/artifacts/10013.png",
         icon: '🎲',
         color: '#ffb347',
         rarity: 4,
@@ -544,7 +555,7 @@ const artifactsData = [
     {
         id: 'traveling-doctor',
         name: '游医',
-        imgUrl: "images/artifacts/10006.png",
+        imgUrl: "../images/artifacts/10006.png",
         icon: '💊',
         color: '#55a630',
         rarity: 3,
@@ -555,7 +566,7 @@ const artifactsData = [
     {
         id: 'tiny-miracle',
         name: '奇迹',
-        imgUrl: "images/artifacts/10004.png",
+        imgUrl: "../images/artifacts/10004.png",
         icon: '⭐',
         color: '#ffd700',
         rarity: 3,
