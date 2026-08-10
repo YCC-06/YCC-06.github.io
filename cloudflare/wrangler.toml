@@ -1,0 +1,8 @@
+name = "genshin-chat-proxy"
+main = "worker.js"
+compatibility_date = "2026-07-01"
+
+# 可选：限制只允许你的网站来源调用（生产环境建议开启）
+# 这里留空表示允许所有来源，方便本地调试
+[vars]
+ALLOWED_ORIGINS = "https://ycc-06.github.io"

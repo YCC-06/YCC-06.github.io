@@ -243,9 +243,8 @@
             randomMood();
         }, 1000);
 
-        // API Key - 用户在下方填入自己的阿里云百炼 API Key
-        const API_KEY = 'sk-8e7b433cb7824a1893049fcf4acbd302';
-        const API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
+        // API 地址 - 指向 Cloudflare Workers 代理（Key 在服务端，见 cloudflare/ 目录）
+        const API_URL = 'https://genshin-chat-proxy.ycc06.workers.dev';
         const MODEL = 'qwen3.7-flash';
         const MAX_CONTEXT_TOKENS = 8000; // 上下文窗口管理
 
@@ -789,25 +788,7 @@ A: 纳西妲可是草神小吉祥草王哦！派蒙超喜欢她的！她是草�
             isLoading = true;
             chatSendBtn.disabled = true;
 
-            // 如果用户没填 API Key，给出提示
-            if (!API_KEY || API_KEY === 'YOUR_DASHSCOPE_API_KEY') {
-                removeLoading();
-                addAssistantMessage('呜哇！旅行者还没有给派蒙配置 API Key 呢～ 请在代码中把 "YOUR_DASHSCOPE_API_KEY" 替换成你自己的阿里云百炼 API Key 哦！✨');
-                isLoading = false;
-                chatSendBtn.disabled = false;
-                return;
-            }
-
             try {
-                // 如果用户没填 API Key，给出提示
-                if (!API_KEY || API_KEY === 'YOUR_DASHSCOPE_API_KEY') {
-                    removeLoading();
-                    addAssistantMessage('呜哇！旅行者还没有给派蒙配置 API Key 呢～ 请在代码中把 "YOUR_DASHSCOPE_API_KEY" 替换成你自己的阿里云百炼 API Key 哦！✨');
-                    isLoading = false;
-                    chatSendBtn.disabled = false;
-                    return;
-                }
-
                 // 上下文长度管理 - 避免超出 token 限制
                 manageContextLength();
 
@@ -818,8 +799,7 @@ A: 纳西妲可是草神小吉祥草王哦！派蒙超喜欢她的！她是草�
                 const response = await fetch(API_URL, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${API_KEY}`
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
                         model: MODEL,
@@ -834,7 +814,7 @@ A: 纳西妲可是草神小吉祥草王哦！派蒙超喜欢她的！她是草�
                 clearTimeout(timeoutId);
 
                 if (!response.ok) {
-                    throw new Error(`API 请求失败: ${response.status}`);
+                    throw new Error(`代理请求失败: ${response.status}`);
                 }
 
                 const reader = response.body.getReader();
@@ -887,7 +867,7 @@ A: 纳西妲可是草神小吉祥草王哦！派蒙超喜欢她的！她是草�
             } catch (error) {
                 console.error('发送消息失败:', error);
                 removeLoading();
-                addAssistantMessage(`呜哇……派蒙遇到了一些问题：${error.message}。旅行者检查一下网络和 API Key 嘛～ 😢`);
+                addAssistantMessage(`呜哇……派蒙遇到了一些问题：${error.message}。旅行者检查一下网络和代理配置嘛～ 😢`);
             } finally {
                 isLoading = false;
                 chatSendBtn.disabled = false;
